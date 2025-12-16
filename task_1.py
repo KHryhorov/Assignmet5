@@ -4,10 +4,12 @@ book_profile={
     "year": 2023,
     "publisher_info":{
         "name": "наукова думка",
-        "city":"Київ"
+        "city": "Київ"
     }
 }
 print(book_profile["title"])
 print(book_profile["author"])
 print(book_profile["publisher_info"]["name"])
-print()
+print(book_profile["publisher_info"]["city"])
+if book_profile.get("year") != None:
+    print(book_profile["year"])
